@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Karim & Youmna - Wedding Invitation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #605a4d60;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      padding: 30px 20px;
+    }
+
+    .invitation-card {
+      max-width: 550px;
+      width: 100%;
+      background-image: url('./remove-any-white-border-lines-or-white-outline-edg.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+      aspect-ratio: 0.7 / 1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+    }
+
+    .content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      color: #f5e6c4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      padding: 40px 30px;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .bismillah {
+      font-family: 'Amiri', 'Traditional Arabic', 'Scheherazade', serif;
+      font-size: 2.7rem;
+      color: #f7e8c2;
+      margin-bottom: 20px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      display: inline-block;
+      padding: 5px 20px;
+      border-radius: 40px;
+      line-height: 1.4;
+    }
+
+    .invite-text {
+      font-family: 'Cormorant Garamond', 'Georgia', serif;
+      font-size: 0.85rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #f2e2b0;
+      margin-bottom: 20px;
+      font-weight: 400;
+      background: rgba(0, 0, 0, 0.25);
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 30px;
+    }
+
+    .names {
+      margin: 12px 0 18px;
+    }
+    .script-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 400;
+      color: #ffefc0;
+      line-height: 1.2;
+      margin: 5px 0;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    }
+    .ampersand {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.6rem;
+      color: #f3e2ae;
+      margin: 0 5px;
+    }
+
+    .date-block {
+      margin: 25px 0 12px;
+    }
+    .date {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #f7e8c2;
+      letter-spacing: 1px;
+    }
+    .time {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85rem;
+      margin-top: 8px;
+      color: #f3e5c4;
+      letter-spacing: 0.8px;
+    }
+
+    .location-block {
+      margin-top: 22px;
+      border-top: 0.5px solid rgba(242, 226, 176, 0.5);
+      padding-top: 16px;
+    }
+    .location-link {
+      display: inline-flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.90rem;
+      color: #f7e8c2;
+      letter-spacing: 0.5px;
+     
+    }
+  
+
+   
+   
+
+    .reception {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      margin-top: 22px;
+      font-style: italic;
+      color: #f0dfb6;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap');
+
+    @media (max-width: 550px) {
+      .content {
+        padding: 30px 20px;
+      }
+      .script-name {
+        font-size: 2.5rem;
+      }
+      .date {
+        font-size: 1.3rem;
+      }
+      .invite-text {
+        font-size: 0.7rem;
+      }
+      .bismillah {
+        font-size: 1.8rem;
+      }
+      .location-link {
+        padding: 5px 14px;
+        font-size: 0.7rem;
+      }
+      .location-icon {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="invitation-card">
+  <div class="overlay"></div>
+  
+  <div class="content">
+    <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</div>
+
+    <div class="invite-text">Please join us to celebrate the wedding of</div>
+
+    <div class="names">
+      <div class="script-name">Karim</div>
+      <div class="ampersand">&amp;</div>
+      <div class="script-name">Youmna</div>
+    </div>
+
+    <div class="date-block">
+      <div class="date">15.5.2025</div>
+      <div class="time">At 5:00 PM</div>
+    </div>
+
+    
+    <div class="location-block">
+      <a href="https://maps.app.goo.gl/jkvyJoGiZVyf8BxM6" target="_blank" class="location-link">
+        <span class="location-icon">📍</span>
+        <span class="location-text">Fairy Garden Palm Venue</span>
+      </a>
+    </div>
+
+    <div class="reception">
+      Reception to follow
+    </div>
+  </div>
+</div>
+</body>
+</html>
